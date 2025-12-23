@@ -73,7 +73,7 @@ members = [
 exclude = ["benches", "distr_test"]
 
 [dependencies]
-rand_core = { version = "=0.10.0-rc-2", default-features = false }
+rand_core = { version = "=0.10.0-rc-3", default-features = false }
 log = { version = "0.4.4", optional = true }
 serde = { version = "1.0.103", features = ["derive"], optional = true }
 chacha20 = { version = "=0.10.0-rc.5", default-features = false, features = ["rng"], optional = true }
@@ -88,3 +88,4 @@ serde_json = "1.0.140"
 
 [patch.crates-io]
 getrandom = { git = "https://github.com/rust-random/getrandom.git", rev = "f67c70110f706f80d7dd6fa52e38d0920754fe2c" }
+chacha20 = { git = "https://github.com/RustCrypto/stream-ciphers.git", rev = "b1ce66e27946618db13f032e03b55d40567871db" }
