@@ -56,3 +56,6 @@ harness = false
 [[bench]]
 name = "weighted"
 harness = false
+
+[patch.crates-io]
+getrandom = { git = "https://github.com/rust-random/getrandom.git", rev = "f67c70110f706f80d7dd6fa52e38d0920754fe2c" }
